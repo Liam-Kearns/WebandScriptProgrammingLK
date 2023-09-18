@@ -2,17 +2,25 @@
     <head>
         <title>Video Example</title>
         <!-- The following line links to our style sheet file-->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script> src="playpause.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Test-sstyle.css">
     </head>
     <body>
-        <video id="video" width="320" height="240" controls>
+        <video id="video"width="320" height="240" controls autoplay muted>
         <source src="on_record.ogv" type="video/ogv">
         <source src="on_record.mp4" type="video/mp4">
 
         </video>
         <br>
         <button onclick="playPause()">Play or pause the video</button>
+        <script>
+        var myVideo=document.getElementById("video");
+        function playPause()
+        {
+        if (myVideo.paused)
+        myVideo.play();
+        else myVideo.pause();
+        }
+        </script>
         
     </body>
 </html>
