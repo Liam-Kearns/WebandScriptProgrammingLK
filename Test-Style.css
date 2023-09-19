@@ -67,12 +67,12 @@ color: white;
 }
 /* Advanced Web design relies on class or ID styles, never tables */
 .box {
-height: 150px;
-width: 150px;float: left;
-background-color:tan;
-margin: 15px;
-opacity:.5;
-}
+    height: 150px;
+    width: 150px;float: left;
+    background-color:tan;
+    margin: 15px;
+    opacity:.5;
+    }
 /* The following pseudo-class applies to the box class when in a hovered state */
 .box:hover {
 background-color:white;
