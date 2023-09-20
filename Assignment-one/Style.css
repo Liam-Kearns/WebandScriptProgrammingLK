@@ -1,7 +1,10 @@
 @charset "UTF-8";
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
-background-color: rgb(249, 247, 247);
+background-color: #ffffff;
 font-family: Verdana, Geneva, Arial, sans-serif;
 padding:0px;    
 margin:0px;
@@ -42,7 +45,7 @@ list-style: none;
 nav li{
 display: inline-block;
 margin-left: 60px ;
-padding-top: 38px;
+padding-top: 19px;
 position: relative;
 }
 nav a {
@@ -67,4 +70,82 @@ nav a::before{
 }
 nav a:hover::before{
     width: 100%;
+}
+
+.contactcontainer{
+    width: 80%;
+    margin: 50px auto   ;
+}
+
+.contactbox{
+    background: #ffffff;
+    display: flex;
+}
+.contactl{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contactr{
+    flex-basis: 40%;
+    padding: 40px;
+    background: #311afd;
+    color: white;
+}
+.contactcontainer h1{
+    margin-bottom: 40px;
+     
+}
+.contactinputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contactinputs .input{
+    flex-basis: 45%;
+
+}
+.contactinputs input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #444;
+    outline: none;
+    padding-bottom: 5px;
+}
+.messagebox textarea{
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    padding: 10px;
+}
+.contactbox label{
+    margin-bottom: 6px;
+    display: block;
+    color: #24232a;
+}
+.contactbox button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181,0.3);
+}
+.contactl h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contactr h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contactr tr td:first-child{
+    padding-right: 20px;
+}
+.contactr tr td{
+    padding-top: 20px;
 }
