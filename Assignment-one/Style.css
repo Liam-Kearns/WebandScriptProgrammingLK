@@ -4,50 +4,58 @@
     padding: 0;
 }
 body {
-background-color: #ffffff;
-font-family: Verdana, Geneva, Arial, sans-serif;
-padding:0px;    
-margin:0px;
-font-weight: 400;
+    height: 100%;
+    background-color: black;
+    background: linear-gradient(#5386A6, #C2E5F2);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding:0px;    
+    margin:0px;
+    font-weight: 400;
 } 
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: #444;
+    color: white;
+}
 .headercontainer{
-width: 80%;
-margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 header{
-background: #55d6aa;
+    background: #444;
 }
 
 header::after{
-content: '';
-display: table;
-clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .logo{
-float: left;
-padding: 8px 0;
+    float: left;
+    padding: 8px 0;
 }
 
 .list{
-float: right;
+    float: right;
 }
 
 nav ul{
-margin: 0;
-padding: 0;
-list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav li{
-display: inline-block;
-margin-left: 60px ;
-padding-top: 19px;
-position: relative;
+    display: inline-block;
+    margin-left: 60px ;
+    padding-top: 19px;
+    position: relative;
 }
 nav a {
-    color: #444;
+    color: #F2E0D5;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -60,7 +68,7 @@ nav a::before{
     display: block;
     height: 5px;
 
-    background-color: #444;
+    background-color: black;
     position: absolute;
     top: 0;
     width: 0%;
@@ -76,7 +84,7 @@ nav a:hover::before{
 }
 
 .contactbox{
-    background: #ffffff;
+    background: #444;
     display: flex;
 }
 .contactl{
@@ -86,11 +94,12 @@ nav a:hover::before{
 .contactr{
     flex-basis: 40%;
     padding: 40px;
-    background: #311afd;
-    color: white;
+    background: #F2E0D5;
+    color: #444;
 }
 .contactcontainer h1{
     margin-bottom: 40px;
+    color: #F2E0D5;
      
 }
 .contactinputs{
@@ -106,34 +115,34 @@ nav a:hover::before{
 .contactinputs input{
     width: 100%;
     border: none;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid white;
     outline: none;
     padding-bottom: 5px;
 }
 .messagebox textarea{
     width: 100%;
-    border: 1px solid #444;
+    border: 1px solid white;
     outline: none;
     padding: 10px;
 }
 .contactbox label{
     margin-bottom: 6px;
     display: block;
-    color: #24232a;
+    color: white;
 }
 .contactbox button{
-    background: #1c00b5;
+    background: #F2E0D5;
     width: 100px;
     border: none;
     outline: none;
-    color: white;
+    color: #444;
     height: 30px;
     border-radius: 25px;
     margin-top: 20px;
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181,0.3);
+    box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
 }
 .contactl h3{
-    color: #1c00b5;
+    color: white;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -147,3 +156,32 @@ nav a:hover::before{
 .contactr tr td{
     padding-top: 20px;
 }
+.introcontainer{
+    padding: 100px 300px;
+    width: 50%;
+    margin: 50px auto;
+    flex-basis: 60%;
+}
+.homeimage{
+    flex-basis: 40%;
+    padding: 10px;
+    padding-left: 60%;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+img{
+    border: 8px #F2E0D5;
+    border-style: double;
+}
+.introcontainer button{
+    background: #F2E0D5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(19, 19, 20, 0.3);
+}
+
