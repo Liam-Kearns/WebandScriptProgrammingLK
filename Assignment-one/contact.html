@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
   <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <title>Liam's Portfolio | Contact</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="phone.css">
 
     <div class = "headercontainer">
         <div class = "navbar">
@@ -13,8 +17,6 @@
           </div>
           <nav class = "list">
             <div class="navlines">
-              <div class="bar"></div>
-
             </div>
             <ul>
               <li>
@@ -41,34 +43,34 @@
         <div class="contactbox">
          <div class="contactl">
             <h3>Send a Message</h3>
-            <form>
+            <form action="https://formsubmit.co/liamkearns58work@gmail.com" method="POST">
                 <div class="contactinputs">
                     <div class="input">
                     <label>Name</label>
-                    <input type="text" placeholder="Mike Smith">
+                    <input type="text" placeholder="Mike Smith" name="name" required>
                 </div>
                 <div class="input">
                     <label>phone</label>
-                    <input type="text" placeholder="+1 123 456 7890">
+                    <input type="tel" placeholder="+1 123 456 7890" name="phone">
                 </div>
                 </div>
                 <div class="contactinputs">
                 <div class="input">
                     <label>Email</label>
-                    <input type="text" placeholder="MikeSmith@gmail.com">
+                    <input type="email" placeholder="MikeSmith@gmail.com" name="Email">
                 </div>
                 <div class="input">
                     <label>Subject</label>
-                    <input type="text" placeholder="Programming Help">
+                    <input type="text" placeholder="Programming Help"name="subject" required>
                 </div>
-
                 </div>
                 <div class="messagebox">
                 <label>Message</label>
-                <textarea id="messagebox" rows="5" placeholder="Your Message"></textarea>
+                <textarea id="messagebox" rows="5" placeholder="Your Message"></textarea name="Message" required>
                 </div>
 
                 <button type="submit">Send</button>
+                <input type="hidden" name="_next" value="thankyou.html">
             </form>
         </div>
         <div class="contactr">
@@ -93,11 +95,14 @@
         </div>
     </div>
     </div>
+    <footer>
+      <address>
+        <p>Liam Kearns <br>
+          Liam.Kearns@onatriotechu.net <br>
+          <span>&copy;</span> 2023 by Liam Kearns
+        </p>
+      </address>
+    </footer>
  </body>
- <footer>
-  <p>Liam Kearns <br>
-    Liam.Kearns@onatriotechu.net <br>
-    <span>&copy;</span> 2023 by Liam Kearns
-  </p>
-</footer>
+
  </html>

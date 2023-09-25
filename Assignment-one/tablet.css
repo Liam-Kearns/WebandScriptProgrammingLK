@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    text-size-adjust: none;
+    text-size-adjust: none; 
     height: 100%;
     background-color: black;
     background: linear-gradient(#5386A6, #C2E5F2);
@@ -58,7 +58,7 @@ nav a {
     color: #F2E0D5;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 21px;
 }
 nav a:hover{
     color: #000;
@@ -81,7 +81,7 @@ nav a:hover::before{
 .contactcontainer{
     width: 80%;
     margin: 50px auto;
-    padding-bottom: px;
+    padding-bottom: 638px;
 }
 
 .contactbox{
@@ -133,7 +133,7 @@ nav a:hover::before{
 }
 .contactbox button{
     background: #F2E0D5;
-    width: 100px;
+    width:200px;
     border: none;
     outline: none;
     color: #444;
@@ -167,14 +167,14 @@ nav a:hover::before{
 .thankyou h2{
     text-align: center;
     padding-top: 20px;
-
 }
 .introcontainer{
     padding: 100px;
     width: 50%;
     margin: 50px auto;
     flex-basis: 60%;
-    padding-bottom: 500px;
+    padding-bottom: 936px;
+    font-size: 25px;
 }
 .homeimage{
     flex-basis: 40%;
@@ -191,7 +191,7 @@ nav a:hover::before{
 }
 .introcontainer button{
     background: #F2E0D5;
-    width: 100px;
+    width: 200px;
     border: none;
     outline: none;
     color: #444;
@@ -212,17 +212,20 @@ nav a:hover::before{
     color: black;
     margin-bottom: 20px;
     margin-top: 15px;
+    font-size: 40px;
 }
 .aboutcontainer h2{
     color: black;
+    font-size: 30px;
 }
 .aboutcontainer video{
     margin-top: 2%;
-    margin-bottom: 100px;
+    margin-bottom: 564px;
 }
 .aboutcontainer p{
     color: #444;
     margin-bottom: 5px;
     line-height: 40px;
+    font-size: 25;
 }
 

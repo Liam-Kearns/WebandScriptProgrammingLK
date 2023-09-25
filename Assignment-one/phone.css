@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    text-size-adjust: none;
+    text-size-adjust: none; 
     height: 100%;
     background-color: black;
     background: linear-gradient(#5386A6, #C2E5F2);
@@ -58,7 +58,7 @@ nav a {
     color: #F2E0D5;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 21px;
 }
 nav a:hover{
     color: #000;
@@ -81,7 +81,7 @@ nav a:hover::before{
 .contactcontainer{
     width: 80%;
     margin: 50px auto;
-    padding-bottom: px;
+    padding-bottom: 1177px;
 }
 
 .contactbox{
@@ -94,13 +94,15 @@ nav a:hover::before{
 }
 .contactr{
     flex-basis: 40%;
-    padding: 40px;
+    padding: 20px;
     background: #F2E0D5;
     color: #444;
+    font-size: 27px;
 }
 .contactcontainer h1{
     margin-bottom: 60px;
     color: #F2E0D5;
+    font-size: 70px;
      
 }
 .contactinputs{
@@ -116,7 +118,7 @@ nav a:hover::before{
 .contactinputs input{
     width: 100%;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #F2E0D5;
     outline: none;
     padding-bottom: 5px;
 }
@@ -129,11 +131,12 @@ nav a:hover::before{
 .contactbox label{
     margin-bottom: 6px;
     display: block;
-    color: white;
+    color: #F2E0D5;
+    font-size: 30px;
 }
 .contactbox button{
     background: #F2E0D5;
-    width: 100px;
+    width:200px;
     border: none;
     outline: none;
     color: #444;
@@ -143,13 +146,15 @@ nav a:hover::before{
     box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
 }
 .contactl h3{
-    color: white;
+    color: #F2E0D5;
     font-weight: 600;
     margin-bottom: 30px;
+    font-size: 40px;
 }
 .contactr h3{
     font-weight: 600;
     margin-bottom: 30px;
+    font-size: 40px;
 }
 .contactr tr td:first-child{
     padding-right: 20px;
@@ -167,23 +172,23 @@ nav a:hover::before{
 .thankyou h2{
     text-align: center;
     padding-top: 20px;
-
 }
 .introcontainer{
     padding: 100px;
     width: 50%;
     margin: 50px auto;
     flex-basis: 60%;
-    padding-bottom: 500px;
+    padding-bottom: 168%;
+    font-size: 25px;
 }
 .homeimage{
     flex-basis: 40%;
     padding: 10px;
-    padding-right: 0px;
-    padding-left: 10px;
+    padding-right: 100px;
+    padding-left: 0px;
     padding-bottom: 10px;
-    margin-top: 0px;
-    margin-left: 700px;
+    margin-top: 500px;
+    margin-left: 450px;
 }
 .homeimage img{
     border: 8px #F2E0D5;
@@ -191,10 +196,12 @@ nav a:hover::before{
 }
 .introcontainer button{
     background: #F2E0D5;
-    width: 100px;
+    width: 300px;
+    height: 200px;
     border: none;
     outline: none;
     color: #444;
+    font-size: 20px;
     height: 30px;
     border-radius: 25px;
     margin-top: 20px;
@@ -212,17 +219,22 @@ nav a:hover::before{
     color: black;
     margin-bottom: 20px;
     margin-top: 15px;
+    font-size: 60px;
 }
 .aboutcontainer h2{
     color: black;
+    font-size: 40px;
 }
 .aboutcontainer video{
     margin-top: 2%;
-    margin-bottom: 100px;
+    margin-bottom: 947px;
 }
 .aboutcontainer p{
     color: #444;
     margin-bottom: 5px;
     line-height: 40px;
+    font-size: 50px;
+    padding-top: 10px;
+    line-height: 60px;
 }
 
