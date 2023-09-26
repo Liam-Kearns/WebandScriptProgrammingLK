@@ -81,7 +81,6 @@ nav a:hover::before{
 .contactcontainer{
     width: 80%;
     margin: 50px auto;
-    padding-bottom: px;
 }
 
 .contactbox{
@@ -129,7 +128,7 @@ nav a:hover::before{
 .contactbox label{
     margin-bottom: 6px;
     display: block;
-    color: white;
+    color: #F2E0D5;
 }
 .contactbox button{
     background: #F2E0D5;
@@ -143,7 +142,7 @@ nav a:hover::before{
     box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
 }
 .contactl h3{
-    color: white;
+    color: #F2E0D5;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -224,5 +223,65 @@ nav a:hover::before{
     color: #444;
     margin-bottom: 5px;
     line-height: 40px;
+}
+.projectcontainer{
+margin-top: 20px;
+margin-bottom: 100px;
+}
+.project1{
+    background-color: #F2E0D5;
+    text-align: center;
+
+}
+.project2{
+    background-color: #F2E0D5;
+    text-align: center;
+    
+}
+.project3{
+    background-color: #F2E0D5;
+    text-align: center;
+}
+.pythonimg{
+    margin-left: 1300px;
+    width: 0px;
+    padding-bottom: 50px;
+
+}
+.apiimg{
+    margin-left: 1300px;
+    width: 0px;
+    padding-bottom: 50px;
+
+}
+.projectcontainer h2{
+    margin-top: 100px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    color: #444;
+
+}
+.project1 p{
+    float:left;
+    margin-top: -155px;
+    margin-left: 35px;
+    margin-bottom: 100px;
+    color: #444;
+    width: 1200px;
+}
+.project2 p{
+    float:left;
+    margin-top: -155px;
+    margin-left: 35px;
+    margin-bottom: 100px;
+    color: #444;
+    width: 1200px;
+}
+.project3 p{
+    float:left;
+    margin-left: 35px;
+    margin-bottom: 100px;
+    color: #444;
+    width: 1200px;
 }
 

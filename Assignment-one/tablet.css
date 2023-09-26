@@ -50,7 +50,7 @@ nav ul{
 
 nav li{
     display: inline-block;
-    margin-left: 60px ;
+    margin-left: 20px ;
     padding-top: 19px;
     position: relative;
 }
@@ -58,7 +58,7 @@ nav a {
     color: #F2E0D5;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 19px;
 }
 nav a:hover{
     color: #000;
@@ -129,7 +129,7 @@ nav a:hover::before{
 .contactbox label{
     margin-bottom: 6px;
     display: block;
-    color: white;
+    color: #F2E0D5;
 }
 .contactbox button{
     background: #F2E0D5;
@@ -143,7 +143,7 @@ nav a:hover::before{
     box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
 }
 .contactl h3{
-    color: white;
+    color: #F2E0D5;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -182,8 +182,8 @@ nav a:hover::before{
     padding-right: 0px;
     padding-left: 10px;
     padding-bottom: 10px;
-    margin-top: 0px;
-    margin-left: 700px;
+    margin-top: 250px;
+    margin-left: 250px;
 }
 .homeimage img{
     border: 8px #F2E0D5;
@@ -226,6 +226,66 @@ nav a:hover::before{
     color: #444;
     margin-bottom: 5px;
     line-height: 40px;
-    font-size: 25;
+    font-size: 25px;
 }
+.projectcontainer{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    }
+    .project1{
+        background-color: #F2E0D5;
+        text-align: center;
+    
+    }
+    .project2{
+        background-color: #F2E0D5;
+        text-align: center;
+        
+    }
+    .project3{
+        background-color: #F2E0D5;
+        text-align: center;
+    }
+    .pythonimg{
+        margin-left: 700px;
+        width: 0px;
+        padding-bottom: 50px;
+    
+    }
+    .apiimg{
+        margin-left: 700px;
+        width: 0px;
+        padding-bottom: 50px;
+    
+    }
+    .projectcontainer h2{
+        margin-top: 100px;
+        padding-top: 15px;
+        margin-bottom: 25px;
+        color: #444;
+    
+    }
+    .project1 p{
+        float:left;
+        margin-top: -155px;
+        margin-left: 35px;
+        margin-bottom: 100px;
+        color: #444;
+        width: 650px;
+    }
+    .project2 p{
+        float:left;
+        margin-top: -155px;
+        margin-left: 35px;
+        margin-bottom: 100px;
+        color: #444;
+        width: 650px;
+    }
+    .project3 p{
+        float:left;
+        margin-left: 35px;
+        margin-bottom: 100px;
+        color: #444;
+        width: 650px;
+    }
 

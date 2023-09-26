@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <meta charset="utf-8">
-  <header>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <title>Liam's Portfolio | Contact</title>
-    <link rel="stylesheet" type="text/css" href="phone.css">
-
+    <meta name="viewport" content="width=device-width">
+    <!-- full-size monitor style sheet-->
+    <link href="Style.css" rel="stylesheet" type="text/css" media="only screen and
+    (min-width:960px)">
+    <!-- tablet style sheet-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen
+    and (min-width:481px) and (max-width:960px)">
+    <!-- phone style sheet-->
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen
+    and (max-width:480px)">
+  </head>
+  <body>
+    <header>
     <div class = "headercontainer">
         <div class = "navbar">
           <div class = "logo">
@@ -37,7 +48,6 @@
       </div>
 
  </header>    
- <body>
     <div class="contactcontainer">
         <h1>Contact Me</h1>
         <div class="contactbox">
@@ -50,7 +60,7 @@
                     <input type="text" placeholder="Mike Smith" name="name" required>
                 </div>
                 <div class="input">
-                    <label>phone</label>
+                    <label>Phone</label>
                     <input type="tel" placeholder="+1 123 456 7890" name="phone">
                 </div>
                 </div>
@@ -61,12 +71,12 @@
                 </div>
                 <div class="input">
                     <label>Subject</label>
-                    <input type="text" placeholder="Programming Help"name="subject" required>
+                    <input type="text" placeholder="Programming Help" name="subject" required>
                 </div>
                 </div>
                 <div class="messagebox">
                 <label>Message</label>
-                <textarea id="messagebox" rows="5" placeholder="Your Message"></textarea name="Message" required>
+                <textarea id="messagebox" rows="5" placeholder="Your Message" required></textarea>
                 </div>
 
                 <button type="submit">Send</button>
@@ -77,18 +87,12 @@
             <h3>Reach Me</h3>
 
             <table>
-                <tr>
-                    <td>OTU Email </td>
-                    <td>Liam.Kearns@onatriotechu.net</td>
-                </tr>
-                <tr>
-                    <td>Email </td>
-                    <td>LiamKearns58work@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td>905-401-0920</td>
-                </tr>
+                <tr><td>OTU Email </td></tr>
+                <tr><td>Liam.Kearns@onatriotechu.net</td></tr>
+                <tr><td>Email </td></tr>
+                <tr><td>LiamKearns58work@gmail.com</td></tr>
+                <tr><td>Phone</td></tr>
+                <tr><td>905-401-0920</td></tr>
 
             </table>
 

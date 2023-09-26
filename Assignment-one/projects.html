@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
   <meta charset="utf-8">  
-    <header> <title>Liam's Portfolio | Projects</title>
-        <link rel="stylesheet" type="text/css" href="phone.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+     <title>Liam's Portfolio | Projects</title>
+      <meta name="viewport" content="width=device-width">
+      <!-- full-size monitor style sheet-->
+      <link href="Style.css" rel="stylesheet" type="text/css" media="only screen and
+      (min-width:960px)">
+      <!-- tablet style sheet-->
+      <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen
+      and (min-width:481px) and (max-width:960px)">
+      <!-- phone style sheet-->
+      <link href="phone.css" rel="stylesheet" type="text/css" media="only screen
+      and (max-width:480px)">        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+      </head>
+      <body>
+      <header>
         <div class = "headercontainer">
             <div class = "navbar">
               <div class = "logo">
@@ -33,7 +45,55 @@
             </div>
           </div>
     </header>
-    <body>
+      <div class="projectcontainer">
+        <div class="project1">
+          <h2 class="projecttitle">Encryption Randomizer</h2>
+          <div class="pythonimg">
+          <img src="python.png" alt="Pyton IMG unavailable" width="100">
+          </div>
+
+          <p>This project was the final project for Object Oriented Programming, 
+            it consisted of six different encryption algorithms, the user would 
+            enter a plain text string, the program would choose a random 
+            encryption method and then encrypt the users string and when the 
+            user was ready they could decrypt their stings and see their, 
+            unencrypted string, encrypted string and the randomly generated 
+            encryption key.</p>
+          
+        </div>
+        <div class="project2">
+          <h2 class="projecttitle">Word Guessing Game</h2>
+          <div class="pythonimg">
+          <img src="python.png" alt="Pyton IMG unavailable" width="100">
+          </div>
+
+          <p>This was the final project for Intro to Programming, 
+            the program is a game where a random word is chosen and 
+            the user chooses how many letters they can guess before
+             the game is over, if the user guesses correctly they win 
+             the game, if not they can repeat and try again.</p>
+          
+        </div>
+        <div class="project3">
+          <h2 class="projecttitle">Full Calender Automation</h2>
+
+          <p>This project is still being developed at this time* 
+            The plan for this project is to make a python based 
+            application that will have algorithms for each type of 
+            event in my life; lectures, appointments, work. These 
+            algorithms will have access to my email, OTU schedule 
+            as well as my posted work schedule, it will determine 
+            any overlaps, cancellations and even rescheduling automatically.
+
+          </p>
+          <div class="apiimg">
+            <img src="api.png" alt="api IMG unavailable" width="100">
+            </div>
+          
+        </div>
+
+      </div>
+      
       <footer>
         <address>
           <p>Liam Kearns <br>
