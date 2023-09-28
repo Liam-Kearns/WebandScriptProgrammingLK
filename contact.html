@@ -20,12 +20,15 @@
   </head>
   <body>
     <header>
+      <!-- Contains all nav bar components -->
     <div class = "headercontainer">
         <div class = "navbar">
           <div class = "logo">
+            <!-- My name at top of page -->
             <h1><span style="color: #F2E0D5">L</span><span style="color: #F2E0D5;">iam</span> <span style="color: #F2E0D5">K</span><span style="color: #F2E0D5">earns</span></h1>
  
           </div>
+          <!-- links to each page in nav bar -->
           <nav class = "list">
             <div class="navlines">
             </div>
@@ -47,40 +50,54 @@
         </div>
       </div>
 
- </header>    
+ </header> 
+  <!-- main container for contact page -->   
     <div class="contactcontainer">
+      <!-- contact me h1 -->
         <h1>Contact Me</h1>
         <div class="contactbox">
          <div class="contactl">
+          <!--send a message h3  -->
             <h3>Send a Message</h3>
+                                <!-- beginning of form -->
+            <!-- form is to be forwarded to formsubmit to send me entered form info via email -->
             <form action="https://formsubmit.co/789e2a544373200bb18fad8de05c867c" method="POST">
                 <div class="contactinputs">
                     <div class="input">
+                      <!-- name input -->
                     <label>Name</label>
                     <input type="text" placeholder="Mike Smith" name="name" required>
                 </div>
                 <div class="input">
+                  <!-- phone input -->
                     <label>Phone</label>
                     <input type="tel" placeholder="+1 123 456 7890" name="phone">
                 </div>
                 </div>
                 <div class="contactinputs">
                 <div class="input">
+                  <!-- email input -->
                     <label>Email</label>
                     <input type="email" placeholder="MikeSmith@gmail.com" name="Email">
                 </div>
                 <div class="input">
+                  <!-- subject  input -->
                     <label>Subject</label>
                     <input type="text" placeholder="Programming Help" name="subject" required>
                 </div>
                 </div>
                 <div class="messagebox">
+                  <!-- message input -->
                 <label>Message</label>
+                <!-- message box -->
                 <textarea id="messagebox" rows="5" name="message" placeholder="Your Message" required></textarea>
                 </div>
+                <!-- where to redirect after form is sent(thank you page) -->
                 <input type="hidden" name="_next" value="https://liam-kearns.github.io/WebandScriptProgrammingLK/thankyou.html">
+                <!-- Submit button -->
                 <button type="submit">Send</button>
             </form>
+            <!-- My displayed info -->
         </div>
         <div class="contactr">
             <h3>Reach Me</h3>
@@ -92,12 +109,12 @@
                 <tr><td>LiamKearns58work@gmail.com</td></tr>
                 <tr><td>Phone</td></tr>
                 <tr><td>905-401-0920</td></tr>
-
             </table>
 
         </div>
     </div>
     </div>
+    <!-- footer -->
     <footer>
       <address>
         <p>Liam Kearns <br>
