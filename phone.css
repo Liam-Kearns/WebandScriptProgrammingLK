@@ -3,15 +3,19 @@
     margin: 0;
     padding: 0;
 }
+/*Styling for the whole body */
 body {
     text-size-adjust: none; 
     height: 100%;
     background-color: black;
+    /* gradient*/
     background: linear-gradient(#5386A6, #C2E5F2);
+        /*assigns fonts from importeed google fonts */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     width: 100%;
 } 
+/* all footer styling*/
 footer{
     text-align: center;
     padding: 3px;
@@ -19,6 +23,7 @@ footer{
     color: #F2E0D5;
     font-size: 16px;
 }
+/* start of navbar styling*/
 .headercontainer{
     width: 80%;
     margin: 0 auto;
@@ -27,11 +32,13 @@ footer{
 header{
     background: #444;
 }
+/*intitialization of hover animation */
 header::after{
     content: '';
     display: table;
     clear: both;
 }
+/* my name at top of page*/
 .logo{
     float: left;
     padding: 8px 0;
@@ -39,17 +46,20 @@ header::after{
 .list{
     float: right;
 }
+/* navbar list*/
 nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
+/* navbar list items*/
 nav li{
     display: inline-block;
     margin-left: 12px ;
     padding-top: 19px;
     position: relative;
 }
+/*nav buttons */
 nav a {
     color: #F2E0D5;
     text-decoration: none;
@@ -63,7 +73,6 @@ nav a::before{
     content: '';
     display: block;
     height: 5px;
-
     background-color: black;
     position: absolute;
     top: 0;
@@ -73,21 +82,23 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
-
+/* main container for contact page*/
 .contactcontainer{
     width: 80%;
     margin: 50px auto;
     padding-bottom: 117px;
 }
-
+/* box containing all contact info and form*/
 .contactbox{
     background: #444;
 
 }
+/* left box(form)*/
 .contactl{
     flex-basis: 60%;
     padding: 40px 60px;
 }
+/* right box(written contact info)*/
 .contactr{
     flex-basis: 40%;
     padding: 20px;
@@ -95,18 +106,18 @@ nav a:hover::before{
     color: #444;
     font-size: 15px;
 }
+/* h1 of container styling*/
 .contactcontainer h1{
     margin-bottom: 60px;
     color: #F2E0D5;
     font-size: 70px;
-     
 }
+/* all inputs for contact form*/
 .contactinputs{
-
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
+/* indiviual contact inputs*/
 .contactinputs .input{
     flex-basis: 45%;
 }
@@ -117,18 +128,21 @@ nav a:hover::before{
     outline: none;
     padding-bottom: 5px;
 }
+/* message box in form*/
 .messagebox textarea{
     width: 100%;
     border: 1px solid white;
     outline: none;
     padding: 10px;
 }
+/* box labels*/
 .contactbox label{
     margin-bottom: 6px;
     display: block;
     color: #F2E0D5;
     font-size: 30px;
 }
+/* contact button(form submit)*/
 .contactbox button{
     background: #F2E0D5;
     width:200px;
@@ -140,34 +154,41 @@ nav a:hover::before{
     margin-top: 20px;
     box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
 }
+/* h3 for left box*/
 .contactl h3{
     color: #F2E0D5;
     font-weight: 600;
     margin-bottom: 30px;
     font-size: 40px;
 }
+/* h3 for right box*/
 .contactr h3{
     font-weight: 600;
     margin-bottom: 30px;
     font-size: 40px;
 }
+/* organizing form inputs*/
 .contactr tr td:first-child{
     padding-right: 20px;
 }
 .contactr tr td{
     padding-top: 20px;
 }
+/* for thankyou page styling*/
 .thankyou{
     margin-top: 20%;
     margin-bottom: 30%;
 }
+/* h1 of thank you page*/
 .thankyou h1{
     text-align: center;
 }
+/* h2 of thank you page*/
 .thankyou h2{
     text-align: center;
     padding-top: 20px;
 }
+/* home page main container*/
 .introcontainer{
     padding: 0px;
     width: 50%;
@@ -176,6 +197,7 @@ nav a:hover::before{
     padding-bottom: 168%;
     font-size: 25px;
 }
+/* box of image on home page*/
 .homeimage{
     flex-basis: 40%;
     padding: 10px;
@@ -185,10 +207,12 @@ nav a:hover::before{
     margin-top: 250px;
     margin-left: 112px;
 }
+/* image on homepage*/
 .homeimage img{
     border: 8px #F2E0D5;
     border-style: double;
 }
+/* button on homepage redirecting to about me */
 .introcontainer button{
     background: #F2E0D5;
     width: 200px;
@@ -201,8 +225,8 @@ nav a:hover::before{
     border-radius: 25px;
     margin-top: 20px;
     box-shadow: 0px 5px 15px 0px rgba(19, 19, 20, 0.3);
-    z-index: 1;
 }
+/* about me page main container*/
 .aboutcontainer{
     margin-top: 4px;
     max-width: 1100px;
@@ -210,20 +234,24 @@ nav a:hover::before{
     padding: 0 3px;
     margin: 0 auto;
 }
+/* h1 of about page*/
 .aboutcontainer h1{ 
     color: black;
     margin-bottom: 20px;
     margin-top: 15px;
     font-size: 35px;
 }
+/* h2 of about page*/
 .aboutcontainer h2{
     color: black;
     font-size: 30px;
 }
+/* video on about page*/
 .aboutcontainer video{
     margin-top: 2%;
     margin-bottom: 100px;
 }
+/* paragraph on about me page*/
 .aboutcontainer p{
     color: #444;
     margin-bottom: 5px;
@@ -232,46 +260,47 @@ nav a:hover::before{
     padding-top: 10px;
     line-height: 25px;
 }
+/* main container for project page*/
 .projectcontainer{
     margin-top: 20px;
     margin-bottom: 100px;
     }
+    /* first project*/
     .project1{
         background-color: #F2E0D5;
         text-align: center;
-    
     }
+    /* second project*/
     .project2{
         background-color: #F2E0D5;
         text-align: center;
-        
     }
+    /* third project*/
     .project3{
         background-color: #F2E0D5;
         text-align: center;
     }
+    /* image of pyhton symbol for project 1 and 2*/
     .pythonimg{
         margin-left: 145px;
         width: 0px;
         padding-bottom: 50px;
         margin-top: 300px;
-    
     }
-    .apiimg{
+    /* google API symbol for project 3*/    .apiimg{
         margin-left: 145px;
         width: 0px;
         padding-bottom: 50px;
-        margin-top: 300px;
-
-    
+        margin-top: 300px;    
     }
+    /* main container h2*/
     .projectcontainer h2{
         margin-top: 100px;
         padding-top: 15px;
         margin-bottom: 25px;
         color: #444;
-    
     }
+    /* project 1 description*/
     .project1 p{
         float:left;
         margin-top: -430px;
@@ -280,6 +309,7 @@ nav a:hover::before{
         color: #444;
         width: 300px;
     }
+    /* project 2 description*/
     .project2 p{
         float:left;
         margin-top: -430px;
@@ -288,6 +318,7 @@ nav a:hover::before{
         color: #444;
         width: 300px;
     }
+    /* project 3 description*/
     .project3 p{
         float:left;
         margin-left: 35px;
