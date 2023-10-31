@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+      <title>Liam's Portfolio | About</title>
+      <meta name="viewport" content="width=device-width">
+      <!-- full-size monitor style sheet-->
+      <link href="/content/Style.css" rel="stylesheet" type="text/css" media="only screen and
+      (min-width:960px)">
+      <!-- tablet style sheet-->
+      <link href="/content/tablet.css" rel="stylesheet" type="text/css" media="only screen
+      and (min-width:481px) and (max-width:960px)">
+      <!-- phone style sheet-->
+      <link href="/content/phone.css" rel="stylesheet" type="text/css" media="only screen
+      and (max-width:480px)">        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">    
+  </head>
+  <%- include('partials/header') %>
+  <body>
+    <!-- Main caontainer for about page -->
+      <div class="aboutcontainer">
+        <!-- name h1-->
+        <h1>Liam Kearns</h1>
+        <!-- general info h2 -->
+        <h2>Networking and IT Security Student at OTU</h2>
+        <!-- short intro p -->
+        <p>My name is Liam Kearns, I am a second year networking and it student at Ontario Tech University,
+          I am twenety years old, I live in Oshawa. I've always been very intriged by 
+          computers, technology and development, not a better place to be than OTU
+        </p>
+        <!-- short intro video -->
+        <video width="350" height="500" controls="controls">
+          <source src="/assets/images/IMG_6666.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- footer -->
+      <%- include('partials/footer') %>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">  
+     <title>Liam's Portfolio | Projects</title>
+      <meta name="viewport" content="width=device-width">
+      <!-- full-size monitor style sheet-->
+      <link href="/content/Style.css" rel="stylesheet" type="text/css" media="only screen and
+      (min-width:960px)">
+      <!-- tablet style sheet-->
+      <link href="/content/tablet.css" rel="stylesheet" type="text/css" media="only screen
+      and (min-width:481px) and (max-width:960px)">
+      <!-- phone style sheet-->
+      <link href="/content/phone.css" rel="stylesheet" type="text/css" media="only screen
+      and (max-width:480px)">        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+      </head>
+      <%- include('partials/header') %>
+      <body>
+    <!-- main container for project page -->
+      <div class="projectcontainer">
+        <!-- project one -->
+        <div class="project1">
+          <!-- project name -->
+          <h2 class="projecttitle">Encryption Randomizer</h2>
+           <!-- project type image -->
+          <div class="pythonimg">
+          <img src="/assets/images/python.png" alt="Pyton IMG unavailable" width="100">
+          </div>
+
+           <!-- project discription -->
+
+          <p>This project was the final project for Object Oriented Programming, 
+            it consisted of six different encryption algorithms, the user would 
+            enter a plain text string, the program would choose a random 
+            encryption method and then encrypt the users string and when the 
+            user was ready they could decrypt their stings and see their, 
+            unencrypted string, encrypted string and the randomly generated 
+            encryption key.</p>
+          
+        </div>
+        <!-- project two -->
+        <div class="project2">
+          <!-- project name -->
+          <h2 class="projecttitle">Word Guessing Game</h2>
+          <!-- project type image -->
+          <div class="pythonimg">
+          <img src="/assets/images/python.png" alt="Pyton IMG unavailable" width="100">
+          </div>
+
+          <!-- project discription -->
+
+          <p>This was the final project for Intro to Programming, 
+            the program is a game where a random word is chosen and 
+            the user chooses how many letters they can guess before
+             the game is over, if the user guesses correctly they win 
+             the game, if not they can repeat and try again.</p>
+          
+        </div>
+        <!-- project three -->
+        <div class="project3">
+          <!-- project name -->
+          <h2 class="projecttitle">Full Calender Automation</h2>
+
+           <!-- project discription -->
+
+          <p>This project is still being developed at this time* 
+            The plan for this project is to make a python based 
+            application that will have algorithms for each type of 
+            event in my life; lectures, appointments, work. These 
+            algorithms will have access to my email, OTU schedule 
+            as well as my posted work schedule, it will determine 
+            any overlaps, cancellations and even rescheduling automatically.
+
+          </p>
+           <!-- project type image -->
+          <div class="apiimg">
+            <img src="/assets/images/api.png" alt="api IMG unavailable" width="100">
+            </div>
+          
+        </div>
+
+      </div>
+      <!-- footer -->
+      <%- include('partials/footer') %>
+    </body>
+
+</html>
