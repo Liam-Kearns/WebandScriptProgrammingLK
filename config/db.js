@@ -1,3 +1,3 @@
 //calls DB from Mongoose
-module.exports = {"URI":"mongodb://127.0.0.1:27017/Assignments"}
+module.exports = {"URI":"mongodb+srv://liamkearns:Liampro9@mongodbserver.nehb4oa.mongodb.net/Assignments"}
 
