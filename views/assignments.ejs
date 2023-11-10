@@ -49,10 +49,10 @@
                 <td class="text-center"><%= assignList[assignmentIndex].lines %></td>
                 <td class="text-center"><%= assignList[assignmentIndex].completed %></td>
                 <td class="text-center">
-                  <a href="/editassignment/<%= encodeURIComponent(assignList[count]._id) %>">
+                  <a href="/editassignment/<%= encodeURIComponent(assignList[assignmentIndex]._id) %>">
                     <button class="btn btn-primary">Edit</button>                </td>
                 <td class="text-center">
-                  <button onclick="confirmDelete('<%= assignList[count]._id %>')">Delete</button>
+                  <button onclick="confirmDelete('<%= assignList[assignmentIndex]._id %>')">Delete</button>
                 </td>
               </tr>
               <% } %>

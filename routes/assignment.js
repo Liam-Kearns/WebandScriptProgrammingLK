@@ -34,7 +34,7 @@ router.post('/new', async (req, res) => {
 router.get('/edit/:id', async (req, res) => {
   try {
     const assignment = await Assignment.findById(req.params.id).exec();
-    res.render('editAssignment', { assignment });
+    res.render('editassignment', { assignment });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Internal Server Error' });
@@ -73,7 +73,7 @@ router.get(['/editassignment/:id', '/editassignment'], async (req, res) => {
         res.status(404).send('Assignment not found');
         return;
       }
-      res.render('editAssignment', { assignment });
+      res.render('editassignment', { assignment });
     } catch (err) {
       console.error(err);
       res.status(500).json({ error: 'Internal Server Error' });
