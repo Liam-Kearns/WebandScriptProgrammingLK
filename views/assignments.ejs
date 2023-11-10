@@ -40,8 +40,13 @@
 
             </tr>
 
-            <% for (let count = 0; count < assignList.length; count++) { %>
-              <tr>
+            <% if (assignList && assignList.length > 0) { %>
+              <% for (let count = 0; count < assignList.length; count++) { %>
+                <!-- your existing loop content -->
+              <% } %>
+            <% } else { %>
+              <p>No assignments available.</p>
+            <% } %>              <tr>
                 <td class="text-center"><%= assignList[count].name %></td>
                 <td class="text-center"><%= assignList[count].class %></td>
                 <td class="text-center"><%= assignList[count].due_date %></td>
