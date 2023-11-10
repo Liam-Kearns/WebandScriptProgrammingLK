@@ -22,6 +22,11 @@ router.get('/projects', function(req, res, next) {
 router.get('/thankyou', function(req, res, next) {
   res.render('thankyou', { title: 'thankyou' });
 }); 
+router.get('/newassignment', function(req, res, next) {
+  res.render('newassignment', { title: 'newassignment' });
+}); 
+
+
 
 
 module.exports = router;

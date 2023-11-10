@@ -201,7 +201,7 @@ nav a:hover::before{
     padding-right: 0px;
     padding-left: 10px;
     padding-bottom: 10px;
-    margin-top: 250px;
+    margin-top: 300px;
     margin-left: 250px;
 }
 /* image on homepage*/
@@ -318,4 +318,151 @@ nav a:hover::before{
         margin-bottom: 100px;
         color: #444;
         width: 650px;
+    }
+.assignmentcontainer {
+    padding: 20px;
+    margin-bottom: 500px;
+  }
+  .assignmentcontainer table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F2E0D5;
+  }
+  .assignmentcontainer table th {
+    text-align: center;
+    background-color: #444;
+    color: #F2E0D5;
+    padding: 10px;
+  }
+  .assignmentcontainer table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #F2E0D5;
+  }
+  .assignmentcontainer table tr:nth-child(even) {
+    background-color: #F2E0D5;
+  }
+  .assignmentcontainer table tr:hover {
+    background-color: #cce5ff;
+  }
+    .assignmentcontainer {
+      padding: 15px;
+      padding-bottom: 783px;
+      margin-bottom: 0;
+    }
+    .assignmentcontainer table th {
+      padding: 8px;
+      font-size: 16px;
+    }
+  
+    .assignmentcontainer table td {
+      padding: 8px;
+      font-size: 16px;
+    }
+    .assignmentcontainer2 {
+        padding: 20px;
+        margin-bottom: 500px;
+    }
+    .assignmentcontainer2 form {
+        background-color: #F2E0D5;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
+    }
+    .assignmentcontainer2 label {
+        display: block;
+        margin-bottom: 6px;
+        color: #444;
+    }
+    .assignmentcontainer2 input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #444;
+        outline: none;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        background-color: #F2E0D5;
+    }
+    .assignmentcontainer2 input[type="checkbox"] {
+        margin-top: 10px;
+    }
+    .assignmentcontainer2 button {
+        background: #444;
+        width: 100px;
+        border: none;
+        outline: none;
+        color: #F2E0D5;
+        height: 30px;
+        border-radius: 25px;
+        margin-top: 20px;
+        box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
+    }
+    .assignmentcontainer2 button:hover {
+        background-color: #666;
+    }
+    .assignmentcontainer table tr button{
+        background: #444;
+        width: 100px;
+        border: none;
+        outline: none;
+        color: #F2E0D5;
+        height: 30px;
+        border-radius: 25px;
+        margin-top: 10px;
+        box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
+      }
+      .assignaddbutton button{
+        float: right;
+        background: #F2E0D5;
+        width: 100px;
+        border: none;
+        outline: none;
+        color: #444;
+        height: 30px;
+        border-radius: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
+    }    
+    /* Heading style */
+    .addassignment h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #444;
+    }
+    /* Form styling */
+    .addassignment form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    /* Label styling */
+    .addassignment label {
+        display: block;
+        margin: 10px 0;
+        color: #444;
+    }
+    /* Input styling */
+    .addassignment input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    /* Button styling */
+    .addassignment button {
+        background-color: #F2E0D5;
+        color: #444;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 350px;
+    }
+    /* Button hover effect */
+    .addassignment button:hover {
+        background-color: #444;
+        color: #F2E0D5;
     }

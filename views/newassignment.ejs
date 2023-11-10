@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>New Assignment</title>
+    <!-- Add your stylesheets or scripts as needed -->
+     <!-- Brings in my selected google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+         <title>Liam's Portfolio |  New Assignment</title>
+     <meta name="viewport" content="width=device-width">
+     <!-- full-size monitor style sheet-->
+     <link href="/content/Style.css" rel="stylesheet" type="text/css" media="only screen and
+     (min-width:960px)">
+     <!-- tablet style sheet-->
+     <link href="/content/tablet.css" rel="stylesheet" type="text/css" media="only screen
+     and (min-width:481px) and (max-width:960px)">
+     <!-- phone style sheet-->
+     <link href="/content/phone.css" rel="stylesheet" type="text/css" media="only screen
+     and (max-width:480px)">
+</head>
+<%- include('partials/header') %>
+<body>
+    <div class="addassignment">
+    <h1>New Assignment</h1>
+    <form action="/assignments/new" method="post">
+        <!-- Add form fields for the new assignment -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        
+        <label for="class">Class:</label>
+        <input type="text" name="class" required>
+
+        <label for="due_date">Due Date</label>
+        <input type="text" name="due_date" required>
+
+        <label for="group">Group</label>
+        <input type="text" name="group" required>
+
+        <label for="lines">Lines</label>
+        <input type="number" name="lines" required>
+
+        <label for="completed">Completed</label>
+        <input type="text" name="completed" required>
+        
+        <!-- Add other fields as needed -->
+        
+        <button type="submit">Save</button>
+    </form>
+    </div>
+</body>
+<%- include('partials/footer') %>
+
+</html>
