@@ -39,8 +39,8 @@
               <th class="text-center">Completed</th>
 
             </tr>
-
-            <% for (let assignmentIndex = 0; assignmentIndex < assignList.length; assignmentIndex++) { %>
+            <% if (assignList && assignList.length > 0) { %>
+              <% for (let assignmentIndex = 0; assignmentIndex < assignList.length; assignmentIndex++) { %>
               <tr>
                 <td class="text-center"><%= assignList[assignmentIndex].name %></td>               
                 <td class="text-center"><%= assignList[assignmentIndex].class %></td>
@@ -55,7 +55,10 @@
                   <button onclick="confirmDelete('<%= assignList[count]._id %>')">Delete</button>
                 </td>
               </tr>
-            <% } %>
+              <% } %>
+              <% } else { %>
+                <p>No assignments available.</p>
+              <% } %>
           </table>
 <!-- Add a script for confirmation -->
 <script>
