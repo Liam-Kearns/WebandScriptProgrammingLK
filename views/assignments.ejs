@@ -40,19 +40,14 @@
 
             </tr>
 
-            <% if (assignList && assignList.length > 0) { %>
-              <% for (let count = 0; count < assignList.length; count++) { %>
-                <!-- your existing loop content -->
-              <% } %>
-            <% } else { %>
-              <p>No assignments available.</p>
-            <% } %>              <tr>
-                <td class="text-center"><%= assignList[count].name %></td>
-                <td class="text-center"><%= assignList[count].class %></td>
-                <td class="text-center"><%= assignList[count].due_date %></td>
-                <td class="text-center"><%= assignList[count].group %></td>
-                <td class="text-center"><%= assignList[count].lines %></td>
-                <td class="text-center"><%= assignList[count].completed %></td>
+            <% for (let assignmentIndex = 0; assignmentIndex < assignList.length; assignmentIndex++) { %>
+              <tr>
+                <td class="text-center"><%= assignList[assignmentIndex].name %></td>               
+                <td class="text-center"><%= assignList[assignmentIndex].class %></td>
+                <td class="text-center"><%= assignList[assignmentIndex].due_date %></td>
+                <td class="text-center"><%= assignList[assignmentIndex].group %></td>
+                <td class="text-center"><%= assignList[assignmentIndex].lines %></td>
+                <td class="text-center"><%= assignList[assignmentIndex].completed %></td>
                 <td class="text-center">
                   <a href="/editassignment/<%= encodeURIComponent(assignList[count]._id) %>">
                     <button class="btn btn-primary">Edit</button>                </td>
