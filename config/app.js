@@ -22,13 +22,11 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 //directing routes
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let DBRouter = require('../routes/assignment');
 const assignmentsRouter = require('../routes/assignment');
 
 // What routers can use
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/assignment-list', DBRouter);
 app.use('/assignments', assignmentsRouter);
 
 app.get('/editassignment/:id', async (req, res, next) => {

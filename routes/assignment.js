@@ -6,8 +6,7 @@ const Assignment = require('../models/assignment_db');
 router.get('/', async (req, res, next) => {
   try {
     const assignList = await Assignment.find().exec();
-    console.log(assignList);
-    // Render the 'assignments' template and pass the 'assignList' data
+    console.log(assignList); // Log the assignList
     res.render('assignments', { assignList });
   } catch (err) {
     console.error(err);
