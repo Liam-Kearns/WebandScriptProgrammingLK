@@ -25,9 +25,7 @@ router.get('/thankyou', function(req, res, next) {
 router.get('/newassignment', function(req, res, next) {
   res.render('newassignment', { title: 'newassignment' });
 }); 
-router.get('/assignments', function(req, res, next) {
-  res.render('assignments', { title: 'assignments' });
-}); 
+
 
 
 

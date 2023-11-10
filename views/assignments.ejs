@@ -27,39 +27,36 @@
           <div class="assignaddbutton">
           <button class="btn btn-success" onclick="window.location.href='/newassignment'">New</button>
         </div>
-          <table class="table table-bordered table-striped table-hover">
-            <tr>
-              <th class="text-center">Name</th>
-              <th class="text-center">Class</th>
-              <th class="text-center">Due Date</th>
-              <th class="text-center">Group</th>
-              <th class="text-center">Lines</th>
-              <th class="text-center">Completed</th>
-              <th class="text-center">Delete</th>
-              <th class="text-center">Completed</th>
+        <table class="table table-bordered table-striped table-hover">
+          <tr>
+            <th class="text-center">Name</th>
+            <th class="text-center">Class</th>
+            <th class="text-center">Due Date</th>
+            <th class="text-center">Group</th>
+            <th class="text-center">Lines</th>
+            <th class="text-center">Completed</th>
+            <th class="text-center">Delete</th>
+            <th class="text-center">Completed</th>
 
+          </tr>
+
+          <% for (let count = 0; count < assignList.length; count++) { %>
+            <tr>
+              <td class="text-center"><%= assignList[count].name %></td>
+              <td class="text-center"><%= assignList[count].class %></td>
+              <td class="text-center"><%= assignList[count].due_date %></td>
+              <td class="text-center"><%= assignList[count].group %></td>
+              <td class="text-center"><%= assignList[count].lines %></td>
+              <td class="text-center"><%= assignList[count].completed %></td>
+              <td class="text-center">
+                <a href="/editassignment/<%= encodeURIComponent(assignList[count]._id) %>">
+                  <button class="btn btn-primary">Edit</button>                </td>
+              <td class="text-center">
+                <button onclick="confirmDelete('<%= assignList[count]._id %>')">Delete</button>
+              </td>
             </tr>
-            <% if (assignList && assignList.length > 0) { %>
-              <% for (let assignmentIndex = 0; assignmentIndex < assignList.length; assignmentIndex++) { %>
-              <tr>
-                <td class="text-center"><%= assignList[assignmentIndex].name %></td>               
-                <td class="text-center"><%= assignList[assignmentIndex].class %></td>
-                <td class="text-center"><%= assignList[assignmentIndex].due_date %></td>
-                <td class="text-center"><%= assignList[assignmentIndex].group %></td>
-                <td class="text-center"><%= assignList[assignmentIndex].lines %></td>
-                <td class="text-center"><%= assignList[assignmentIndex].completed %></td>
-                <td class="text-center">
-                  <a href="/editassignment/<%= encodeURIComponent(assignList[assignmentIndex]._id) %>">
-                    <button class="btn btn-primary">Edit</button>                </td>
-                <td class="text-center">
-                  <button onclick="confirmDelete('<%= assignList[assignmentIndex]._id %>')">Delete</button>
-                </td>
-              </tr>
-              <% } %>
-              <% } else { %>
-                <p>No assignments available.</p>
-              <% } %>
-          </table>
+          <% } %>
+        </table>
 <!-- Add a script for confirmation -->
 <script>
   function confirmDelete(assignmentId) {
