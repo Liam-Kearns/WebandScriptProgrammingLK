@@ -37,9 +37,7 @@
             <th class="text-center">Completed</th>
             <th class="text-center">Delete</th>
             <th class="text-center">Completed</th>
-
           </tr>
-
           <% for (let count = 0; count < assignList.length; count++) { %>
             <tr>
               <td class="text-center"><%= assignList[count].name %></td>
@@ -57,7 +55,7 @@
             </tr>
           <% } %>
         </table>
-<!-- Add a script for confirmation -->
+<!--a script for confirmation -->
 <script>
   function confirmDelete(assignmentId) {
     const isConfirmed = confirm('Are you sure you want to delete this assignment?');

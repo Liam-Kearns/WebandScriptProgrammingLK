@@ -445,7 +445,7 @@ nav a:hover::before{
   .addassignment h1 {
     text-align: center;
     margin-top: 20px;
-    color: #444;
+    color: #000;
 }
 /* Form styling */
 .addassignment form {
@@ -478,9 +478,17 @@ nav a:hover::before{
     cursor: pointer;
 }
 /* Button hover effect */
-.addassignment button:hover {
-    background-color: #444;
-    color: #F2E0D5;
+.addassignment button {
+    background: #F2E0D5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #444;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(190, 189, 195, 0.3);
 }
+
           
   

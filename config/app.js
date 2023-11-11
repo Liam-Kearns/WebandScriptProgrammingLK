@@ -39,7 +39,7 @@ app.get('/editassignment/:id', async (req, res, next) => {
     res.render('editassignment', { assignment });
   } catch (err) {
     console.error('Error in /editassignment/:id route:', err);
-    next(err); // Pass the error to the next middleware
+    next(err); 
   }
 });
 // Route to handle updating assignments

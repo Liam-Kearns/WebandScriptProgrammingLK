@@ -9,7 +9,7 @@ const assignmentSchema = new mongoose.Schema({
     lines: Number,
     completed: String
 }, {
-    collection: 'Assignment_db' // Specify the collection name here
+    collection: 'Assignment_db'
 });
 
 const Assignment = mongoose.model('Assignment', assignmentSchema);
